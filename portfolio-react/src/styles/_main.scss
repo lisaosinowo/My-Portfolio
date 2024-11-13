@@ -1,0 +1,84 @@
+@import 'variables';
+@import 'mixins';
+
+.main-wrapper {
+    margin: auto;
+    @include section-width;
+}
+
+.profile-name {
+    display: flex;
+    position: relative;
+}
+
+.profile-name > h1 {
+    font-size: 38px;
+    color: $white;
+}
+
+.profile-name > img {
+    padding-left: 5px;
+    height: 30px;
+    align-self: center;
+}
+
+#username {
+    padding-bottom: 5px;   
+    color: $grey; 
+}
+
+.profile-quote {
+    display: flex;
+}
+
+.profile-quote p {
+    padding-bottom: 5px;
+}
+
+.profile-quote img {
+    padding-left: 5px;
+    height: 25px;
+}
+
+.profile-quote p, .profile-info > p {
+    color: $white;
+}
+
+.profile-details {
+    display: flex;
+    gap: 15px;
+    padding-top: 12px;
+}
+
+.profile-details img {
+    width: 25px;
+    padding-right: 5px;
+}
+
+.prof-details-sections {
+    display: flex;
+}
+
+.prof-details-sections p, .prof-details-sections a {
+    color: $grey;
+    text-decoration: none;
+}
+
+.portfolio-sections {
+    display: grid;
+    grid-template-columns: repeat(4, calc(100%/4));
+    margin-top: 45px;
+}
+
+.portfolio-sections span {
+    text-align: center;
+    font-weight: 680;
+}
+
+.portfolio-sections a {
+    text-decoration: none;
+    color: $grey;
+}
+
+
+
